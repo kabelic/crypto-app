@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import {createGlobal, ThemeProvider} from 'styled-components'
+import {Route, Routes} from 'react-router-dom'
+import Coin from './pages/coin';
+import Portfolio from './pages/portfolio'
+import NavComponent from './components/navComponent/NavComponent';
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <NavComponent/>
+          <Routes>
+            <Route path='/coin' element={<Coin/>}/>
+            <Route path='/portfolio' element={<Portfolio/>}/>
+          </Routes>
+      </div>
+    </ThemeProvider>
   );
 }
 
