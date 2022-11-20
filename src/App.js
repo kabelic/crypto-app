@@ -8,7 +8,7 @@ import NavComponent from './components/navComponent/NavComponent';
 function App() {
   
   return (
-    <ThemeProvider>
+    // <ThemeProvider>
       <div className="App">
         <NavComponent/>
           <Routes>
@@ -16,7 +16,7 @@ function App() {
             <Route path='/portfolio' element={<Portfolio/>}/>
           </Routes>
       </div>
-    </ThemeProvider>
+    /* </ThemeProvider> */
   );
 }
 
