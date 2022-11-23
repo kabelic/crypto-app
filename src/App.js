@@ -6,9 +6,15 @@ import Portfolio from './pages/portfolio'
 import NavComponent from './components/navComponent/NavComponent';
 
 function App() {
+
+  const theme = {
+    color :{
+
+    }
+  }
   
   return (
-    // <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <div className="App">
         <NavComponent/>
           <Routes>
@@ -16,7 +22,7 @@ function App() {
             <Route path='/portfolio' element={<Portfolio/>}/>
           </Routes>
       </div>
-    /* </ThemeProvider> */
+    </ThemeProvider>  
   );
 }
 
