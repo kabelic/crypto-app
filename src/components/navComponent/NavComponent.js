@@ -1,21 +1,26 @@
 import './NavComponent.css' 
 import Search from '../searchComponent';
 import Coins from '../coinsComponent';
+import CurrencyComponent from '../CurrencyComponent';
 import { Link } from 'react-router-dom';
+import { LeftSide, Nav, RightSide, RightCornerIcon, LinkStyle } from '../styles/Nav.styled';
+import {SiNintendoswitch} from 'react-icons/si'
 
 const NavComponent = () => {
     return(
-        <div className="navBar">
-            <div className='leftSide'>
+        <Nav>
+            <LeftSide>
                 <Coins/>
-                <div><Link to='/portfolio'>Portfolio</Link></div>
-            </div>
-            <div className='rightSide'>
+                <LinkStyle><Link style={{textDecoration: 'none', color:'white'}} to='/portfolio'>Portfolio</Link></LinkStyle>
+            </LeftSide>
+            <RightSide>
                 <Search/>
-                <div>USD</div>
-                <div>Icon</div>
-            </div>
-        </div>
+                <CurrencyComponent/>
+                <RightCornerIcon>
+                    <SiNintendoswitch/>
+                </RightCornerIcon>
+            </RightSide>
+        </Nav>
     )
 }
 

@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
+import {CoinStyle} from '../../components/styles/Nav.styled';
 import './coinsComponent.css'
 
 const Coins = () => {
     return (
-        <div className='coinStyle'>
-            <Link to='/coin'>Coins</Link>
-        </div>
+        <CoinStyle>
+            <Link style={{textDecoration: 'none', color:'white'}} to='/coin'>Coins</Link>
+        </CoinStyle>
     )
 }
 

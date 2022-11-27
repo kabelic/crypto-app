@@ -1,21 +1,4 @@
-.navBar{
-    display: flex;
-    flex-direction:row;
-    background-color: #191B1F;
-    margin: 10px auto;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 20px;
-}
-.navBar Link{
-    font-style: none;
-}
-.leftSide{
-    display: flex;
-    flex-direction:row;
-    color: white;
-    width: 50%;
-}
+
 .rightSide{
     display: flex;
     flex-direction: row;
