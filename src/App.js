@@ -30,7 +30,6 @@ const lightTheme = {
   secondary: 'black'
  }
 
-
 class App extends React.Component {
   state = {
     on: true,
@@ -39,8 +38,6 @@ class App extends React.Component {
    handleClick = () => {
     this.setState({on: !this.state.on})
    }
-  
-  
 
   render(){
 
@@ -59,8 +56,6 @@ class App extends React.Component {
       </ThemeProvider>  
     );
   }
-  
- 
 }
 
 export default App;
