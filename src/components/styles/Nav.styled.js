@@ -4,34 +4,28 @@ import { Link } from "react-router-dom"
 export const Nav = styled.div`
     display: flex;
     justify-content: space-between;
-    background-color: #191B1F;
+    background: ${(props) => props.theme.secondary};
+    border:  1px solid ${(props) => props.theme.main};
+    color: ${(props) => props.theme.main};
     padding: 10px 40px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 `
-
 export const LeftSide = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    :LinK{
-        text-decoration: 'none';
-        color:'white';
-    }
 `
-
 export const RightSide = styled.div`
     display: flex;
     flex-direction: row;
 `
-
 export const LinkStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: ${(props) => props.theme.main};
 `
-
 export const SearchStyle = styled.div`
     display: flex;
     flex-direction: row;
@@ -54,26 +48,23 @@ export const SearchStyle = styled.div`
         
         }
     }
-
     input:focus{
             outline-style: none;
             box-shadow: none;
         }
     
 `
-
 export const CoinStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
     background-color: #2C2F36;
-    color: #FFFFFF;
+    color: ${(props) => props.theme.main};
     font-size: 15px ;
     padding: 0 15px;
     margin-right: 10px;
 `
-
 export const Currency = styled.div`
     display: flex;
     flex-direction: row;
@@ -84,7 +75,6 @@ export const Currency = styled.div`
     border-radius: 4px;
     margin-right: 10px;
 `
-
 export const MoneyIcon = styled.div`
     display: flex;
     justify-content: center;
@@ -94,12 +84,11 @@ export const MoneyIcon = styled.div`
     color: #00FC2A;
     margin-right: 5px ;
 `
-
 export const RightCornerIcon = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF;
+    color: ${(props) => props.theme.main};
     border-radius: 5px;
     font-size: 10px; 
     width: 30px;
@@ -109,10 +98,13 @@ export const RightCornerIcon = styled.div`
 export const SearchIcon = styled.div`
     display: flex;
     justify-content: center;
-    color: #FFFFFF; 
+    color: ${(props) => props.theme.main}; 
     margin-right: 5px;
 `
 export const LinkWrapper = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    color: #FFFFFF; 
+    color: ${(props) => props.theme.main}; 
 `

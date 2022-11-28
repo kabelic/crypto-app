@@ -28,7 +28,8 @@ const darkTheme = {
 
 const lightTheme = {
   main:'white',
-  secondary: '#1F2128'
+  secondary: '#1F2128',
+  third: '#191B1F',
  }
 
 class App extends React.Component {

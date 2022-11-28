@@ -1,16 +1,16 @@
-import {SiNintendoswitch} from 'react-icons/si'
+import { SiNintendoswitch } from 'react-icons/si'
 import './NavComponent.css' 
 import Search from '../searchComponent';
 import Coins from '../coinsComponent';
 import CurrencyComponent from '../CurrencyComponent';
-import { LeftSide, Nav, RightSide, RightCornerIcon, LinkStyle, LinkWrapper } from '../styles/Nav.styled';
+import { LeftSide, Nav, RightSide, RightCornerIcon, LinkWrapper } from '../styles/Nav.styled';
 
 const NavComponent = (props) => {
     return(
         <Nav>
             <LeftSide>
                 <Coins/>
-                <LinkStyle><LinkWrapper to='/portfolio'>Portfolio</LinkWrapper></LinkStyle>
+                <LinkWrapper to='/portfolio'>Portfolio</LinkWrapper>
             </LeftSide>
             <RightSide>
                 <Search/>
