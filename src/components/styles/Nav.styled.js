@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 export const Nav = styled.div`
     display: flex;
@@ -13,6 +14,10 @@ export const LeftSide = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    :LinK{
+        text-decoration: 'none';
+        color:'white';
+    }
 `
 
 export const RightSide = styled.div`
@@ -67,10 +72,6 @@ export const CoinStyle = styled.div`
     font-size: 15px ;
     padding: 0 15px;
     margin-right: 10px;
-
-    :Link{
-        text-decoration: none;
-    }
 `
 
 export const Currency = styled.div`
@@ -110,4 +111,8 @@ export const SearchIcon = styled.div`
     justify-content: center;
     color: #FFFFFF; 
     margin-right: 5px;
+`
+export const LinkWrapper = styled(Link)`
+    text-decoration: none;
+    color: #FFFFFF; 
 `
