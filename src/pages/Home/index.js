@@ -1,6 +1,8 @@
  import React from "react"
  import axios from "axios"
  import PriceVolume from "../../components/PriceVolumeComponent"
+ import { Header, SubHeader, TextStyle, Wrapper } from "../../components/styles/Body.styled"
+ import Search from "../../components/searchComponent" 
 
  class Home extends React.Component{
     state={
@@ -28,11 +30,13 @@
 
     render(){
         return(
-            <div>
+            <Wrapper>
                 {this.state.isLoading && <p>Loading...</p>}
-                <p>Your overview</p>
+                <TextStyle margin={10}>
+                    <Header weight={500} size={20}>Main page</Header>
+                    <SubHeader weight={300} size={10}>Learn about portfolio and investment summary</SubHeader>
+                </TextStyle>
                 <PriceVolume price={this.state.priceVolume}/>
-                <p>Your overview</p>
                 <table>
                     <thead>
                         <tr>
@@ -60,7 +64,7 @@
                     )}
                     </tbody>
                 </table>
-            </div>
+            </Wrapper>
         )
     }
     
