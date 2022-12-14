@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background: 'black';
+    display: flex;
+    flex-direction: row;
+    background: #161616;
     width: 90%;
     margin: 0 auto;
 `
