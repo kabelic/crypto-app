@@ -1,7 +1,13 @@
 import { BsCurrencyBitcoin } from 'react-icons/bs'
 import { MdOutlineArrowDropUp } from 'react-icons/md'
 import { TextStyle, Header, SubHeader, BitcoinIcon } from './styles/Body.styled'
-import { BitcoinLeft1div, BitcoinLeft2div, BitCoinLeft2divDropd, BitCoinLeft2divPercent, Tags, BitcoinLeft3div, BitcoinLeft4div, BitcoinLeftStyle } from './styles/coinpage.styled'
+import { BitcoinLeft1div, BitcoinLeft2div, BitCoinLeft2divDropd, BitCoinLeft2divPercent, 
+    Tags, 
+    BitcoinLeft3div,
+     BitcoinLeft4div, 
+     BitcoinLeftStyle,
+     DropdwnStyle,
+     } from './styles/coinpage.styled'
 import BitcoinLeftInner from './BitcoinLeftInner'
 import CreateAccount from './CreateAccount'
 
@@ -19,7 +25,7 @@ const BitcoinLeft = () => {
                 <BitcoinIcon/>
                 <div>$2,400.90</div>
                 <BitCoinLeft2divDropd>
-                    <div><MdOutlineArrowDropUp/></div>
+                    <DropdwnStyle><MdOutlineArrowDropUp/></DropdwnStyle>
                     <BitCoinLeft2divPercent>0.50%</BitCoinLeft2divPercent>
                 </BitCoinLeft2divDropd>
             </BitcoinLeft2div>

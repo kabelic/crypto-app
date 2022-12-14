@@ -1,8 +1,9 @@
 import { TextStyle, Header,SubHeader } from "../../components/styles/Body.styled"
 import { Numbers } from "../../components/styles/coinpage.styled"
 import NumberComponent from '../../components/NumberComponent'
-import BitcoinLeft from "../../components/BitcoinLeft"
 import BitcoinComponent from '../../components/BitcoinComponent'
+import Feedback from "../../components/Feedback"
+import Chart from "../../components/Chart"
 
 const Coin = () => {
     return(
@@ -19,6 +20,8 @@ const Coin = () => {
                 <NumberComponent title={'Average Price'} value={7}/>
             </Numbers>
             <BitcoinComponent/>
+            <Feedback/>
+            <Chart/>
         </div>
     )
 }

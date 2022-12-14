@@ -17,7 +17,11 @@ import styled from "styled-components";
    width: 100%;
  `
  export const TextStyle = styled.div`
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
    margin-top: ${({ margin }) => margin }px;
+
  `
  export const Header = styled.div`
    display: flex;
@@ -32,9 +36,9 @@ import styled from "styled-components";
    display: flex;
    font-family: 'Poppins';
    font-style: normal;
+   align-items: center;
    font-weight: ${({ weight }) => weight};
    font-size: ${({ size }) => size}px;
-   align-items: center;
    color: ${(props) => props.theme.main};
    opacity: 0.6;
  `
@@ -82,16 +86,10 @@ export const BitcoinIcon = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
-   left: 7.71%;
-   right: 90%;
-   top: 15.66%;
-   bottom: 81.21%;
    background: ${(props) => props.bgColor ? props.bgColor : 'transparent'};
    color: ${(props) => props.logoColor ? props.logoColor : 'white'};
    border-radius: 4px;
-   width: 20px;
    padding: 10px;
-   margin-right: 10px;
 `
 export const DropDownIcon = styled.div`
    display: flex;
