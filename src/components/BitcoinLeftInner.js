@@ -2,7 +2,7 @@ import { BtCoinLeftInner } from "./styles/coinpage.styled";
    
 const BitcoinLeftInner = ({text}) => {
     return(
-        <BtCoinLeftInner>
+        <BtCoinLeftInner onClick={() => console.log(text, ' was clicked!!')}>
             {text}
         </BtCoinLeftInner>
     )

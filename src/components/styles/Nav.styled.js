@@ -30,7 +30,8 @@ export const SearchStyle = styled.div`
     background-color: transparent;
     padding: 0 10px ;
     border: 1px solid #272727; 
-    width: 80%;
+    margin-right: 10px;
+    width: 100%;
 
     input{
        background-color: transparent;
@@ -116,8 +117,14 @@ export const NewAccount = styled.div`
     justify-content: center;
     background: ${(props) => props.bg ? props.bg : 'transparent'};
     border: 1px solid #FFAF2C;
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    margin-right: 10px;
     padding: 0 15px ;
     border-radius: 6px;
     color: ${(props) => props.textColor ? props.textColor : 'white'};
+    width: 100%;
+`
+export const SearchRigh = styled.div`
+    display: flex;
+    width: 30%;
 `

@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const Numbers = styled.div`
     display: flex;
     flex-direction: row;
+    width: inherit;
 `
 export const NumbeComponentStyle = styled.div`
     display: flex;
@@ -16,13 +17,14 @@ export const NumbeComponentStyle = styled.div`
     margin-top: 10px;
     margin-bottom: 15px ;
     margin-right: 10px ;
+    line-height: 30px;
 `
 export const NumberTitle = styled.div`
     display: flex;
     font-family: 'Helvetica Now Display';
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 9px;
     line-height: 18px;
     color: #FFAF2C;
 `
@@ -30,10 +32,11 @@ export const NumberValue = styled.div`
     display: flex;
     font-family: 'Helvetica Now Display';
     font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 35px;
+    font-weight: 300;
+    font-size: 20px;
+    /* line-height: 35px; */
     color: #FFFFFF;
+    width: 100%;
 `
 export const BitcoinComponentStyle = styled.div`
     display: flex;
@@ -75,9 +78,10 @@ export const BitcoinLeft3div = styled.div`
     flex-direction: row;
     margin-top: 10px;
 `
-export const BtCoinLeftInner = styled.div`
+export const BtCoinLeftInner = styled.button`
     display: flex;
     background: #272727;
+    border: none;
     border-radius: 121px;
     font-family: 'Poppins';
     font-style: normal;
@@ -91,7 +95,8 @@ export const BitcoinLeft4div = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    width: 100%;
+    margin-right: 80px;
+    height: 40px;
 `
 export const BitcoinRighStyle = styled.div`
     display: flex;
@@ -170,6 +175,7 @@ export const ChartType = styled.div`
     border-radius: 6px;
     padding: 15px;
     margin-top: 20px;
+    margin-bottom: 20px;
 `
 export const ChartTop = styled.div`
     display: flex;
@@ -211,5 +217,10 @@ export const ChartBottom = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    width: 100%;
+    /* height: 300px; */
+    /* width: 1000px; */
+`
+export const Amount = styled.div`
+    display:flex;
+    margin-left: 23px;
 `

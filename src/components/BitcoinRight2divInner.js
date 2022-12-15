@@ -5,10 +5,10 @@ import { Btcoin2InnerStyle } from "./styles/coinpage.styled"
 import { Header, SubHeader } from "./styles/Body.styled"
 import { BitCoinLeft2divPercent, BitCoinLeft2divDropd, DropdwnStyle, MoneyPercentge } from "./styles/coinpage.styled"
 
-const BitcoinRight2divInner = ({header, subheader, icon}) => {
+const BitcoinRight2divInner = ({header, subheader, icon, logoColor}) => {
     return(
         <Btcoin2InnerStyle>
-                <BitcoinIcon bgColor={'#272727'}>{icon}</BitcoinIcon>
+                <BitcoinIcon logoColor={logoColor} bgColor={'#272727'}>{icon}</BitcoinIcon>
                 <Header weight={400} size={15}>{header}</Header>
                 <SubHeader weight={300} size={10}>{subheader}</SubHeader>
             <MoneyPercentge>

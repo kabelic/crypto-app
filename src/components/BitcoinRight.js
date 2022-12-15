@@ -12,11 +12,11 @@ const BitcoinRight = () => {
                     <SubHeader weight={200} size={8}>Learn about projects and status</SubHeader>
             </TextStyle>
             <BitcoinRight2div>
-                <BitcoinRight2divInner icon={<img style={{width: '20px'}} src={avax} alt=''/>} header={'AVAX'} subheader={'AVAX'}/>
+                <BitcoinRight2divInner logoColor={'#FFAF2C'} icon={<img style={{width: '20px'}} src={avax} alt=''/>} header={'AVAX'} subheader={'AVAX'}/>
                 <VerticalLine></VerticalLine>
-                <BitcoinRight2divInner icon={<BsCurrencyBitcoin/>} header={'Etherium'} subheader={'ETH'}/>
+                <BitcoinRight2divInner logoColor={'#FFAF2C'} icon={<BsCurrencyBitcoin />} header={'Ethereum'} subheader={'ETH'}/>
                 <VerticalLine></VerticalLine>
-                <BitcoinRight2divInner icon={<BsCurrencyBitcoin/>} header={'DAI'} subheader={'DAI'}/>
+                <BitcoinRight2divInner logoColor={'#FFAF2C'} icon={<BsCurrencyBitcoin />} header={'DAI'} subheader={'DAI'}/>
             </BitcoinRight2div>
         </BitcoinRighStyle>
     )

@@ -16,6 +16,9 @@ import { Container } from './components/styles/Container.styled';
 import { Body, LeftSide, RightSide } from './components/styles/Body.styled';
 import Home from './pages/Home';
 import Logo from './components/LogoComponent';
+import Ethereum from './pages/Ethereum';
+import Bitcoin from './pages/Bitcoin';
+import Dai from './pages/Dai';
 
 const theme = {
   colors:{
@@ -55,7 +58,7 @@ class App extends React.Component {
           <GlobalStyle/>
           <Container>
             <LeftSide>
-              <Logo logoIcon={<AiOutlineCodeSandbox/>} title={'YOUR LOGO'} description={'CRYPTO AND STUFF'}/>
+              <Logo size={100} logoIcon={<AiOutlineCodeSandbox/>} title={'YOUR LOGO'} description={'CRYPTO AND STUFF'}/>
               <Logo logoIcon={<RiMessengerLine/>} title={'Overview'}/>
               <Logo logoIcon={<TfiWallet/>} title={'Wallets'}/>
               <Logo logoIcon={<TbNews/>} title={'News'}/>
@@ -71,6 +74,9 @@ class App extends React.Component {
                 <Routes>
                   <Route path='/' element={<Home/>}/>
                   <Route path='/coin' element={<Coin/>}/>
+                  <Route path='/coin/dai' element={<Dai/>}/>
+                  <Route path='/coin/bitcoin' element={<Bitcoin/>}/>
+                  <Route path='/coin/ethereum' element={<Ethereum/>}/>
                   <Route path='/portfolio' element={<Portfolio/>}/>
                 </Routes>
               </Body>

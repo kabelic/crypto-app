@@ -20,8 +20,7 @@ import styled from "styled-components";
    display: flex;
    flex-direction: column;
    justify-content: center;
-   margin-top: ${({ margin }) => margin }px;
-
+   margin-left: ${({ margin }) => margin }px;
  `
  export const Header = styled.div`
    display: flex;
@@ -142,10 +141,13 @@ export const LogoTitle = styled.div`
    font-size: 8px;
 `
 export const LogoDescription = styled.div`
+   display: flex;
+   justify-content: center;
    font-family: 'Poppins';
    font-style: normal;
-   font-weight: 500;
-   font-size: 3px;
-   line-height: 4px;
+   /* font-weight: ${(props) => props.size ? props.size : 500}; */
+   font-weight: 20px;
+   font-size: 1px;
    opacity: 0.5;
+   width: inherit;
 `
