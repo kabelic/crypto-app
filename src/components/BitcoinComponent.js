@@ -2,10 +2,10 @@ import BitcoinLeft from "./BitcoinLeft";
 import BitcoinRight from "./BitcoinRight";
 import { BitcoinComponentStyle } from "./styles/coinpage.styled";
 
-const BitcoinComponent = () => {
+const BitcoinComponent = ({ data, name }) => {
     return(
         <BitcoinComponentStyle>
-            <BitcoinLeft/>
+            <BitcoinLeft name={name} data={data}/>
             <BitcoinRight/>
         </BitcoinComponentStyle>
     )

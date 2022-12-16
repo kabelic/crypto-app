@@ -1,25 +1,40 @@
 import { BsCurrencyBitcoin } from 'react-icons/bs'
 import { MdOutlineArrowDropUp } from 'react-icons/md'
 import { TextStyle, Header, SubHeader, BitcoinIcon } from './styles/Body.styled'
-import { BitcoinLeft1div, BitcoinLeft2div, BitCoinLeft2divDropd, BitCoinLeft2divPercent, Tags, BitcoinLeft3div, BitcoinLeft4div, BitcoinLeftStyle } from './styles/coinpage.styled'
+import { BitcoinLeft1div, BitcoinLeft2div, BitCoinLeft2divDropd, BitCoinLeft2divPercent, 
+    Tags, 
+    BitcoinLeft3div,
+     BitcoinLeft4div, 
+     BitcoinLeftStyle,
+     DropdwnStyle,
+     Amount,
+     } from './styles/coinpage.styled'
 import BitcoinLeftInner from './BitcoinLeftInner'
 import CreateAccount from './CreateAccount'
 
-const BitcoinLeft = () => {
+const BitcoinLeft = ({ data, name}) => {
     return(
         <BitcoinLeftStyle>
-            <BitcoinLeft1div>
-                <BitcoinIcon bgColor={'#272727'}><BsCurrencyBitcoin/></BitcoinIcon>
-                <TextStyle margin={0}>
-                    <Header weight={400} size={15}>Bitcoin</Header>
-                    <SubHeader weight={300} size={10}>BTC</SubHeader>
-                </TextStyle>
-            </BitcoinLeft1div>
+            {data && data.map((item) => {
+                if(item.name === name){
+                    return(
+                        <BitcoinLeft1div>
+                            <BitcoinIcon bgColor={'#272727'}>
+                                { item.name ? <img src={item.image} width='15' alt='Bitcoin'/> :  <BsCurrencyBitcoin/> }
+                            </BitcoinIcon>
+                            <TextStyle margin={10}>
+                                <Header weight={400} size={15}>{item.name ? item.name : 'Bitcoin'}</Header>
+                                <SubHeader weight={300} size={10}>{ item.name ? item.symbol.toUpperCase() : 'BTC' }</SubHeader>
+                            </TextStyle>
+                        </BitcoinLeft1div>
+                    )
+                }
+            })}
             <BitcoinLeft2div>
                 <BitcoinIcon/>
-                <div>$2,400.90</div>
+                <Amount>$2,400.90</Amount>
                 <BitCoinLeft2divDropd>
-                    <div><MdOutlineArrowDropUp/></div>
+                    <DropdwnStyle><MdOutlineArrowDropUp/></DropdwnStyle>
                     <BitCoinLeft2divPercent>0.50%</BitCoinLeft2divPercent>
                 </BitCoinLeft2divDropd>
             </BitcoinLeft2div>
